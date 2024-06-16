@@ -7,6 +7,709 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div id="noteAlertMsg">
+        Faça uma <a href="/doacoes.php" style="color: #0A92C8; hover: #0A92C8;">doação</a> e ajude-nos a manter o site on-line. :)
+    </div>
+    <div id="wrapper">
+        <h1 class="hidden">BJ-Share</h1>
+        <div id="header">
+            <a href="/doacoes.php">
+                <div id="logo">llllllllll</div>
+            </a>        
+            <div id="userinfo">
+                <ul id="userinfo_stats">
+                    <li id="stats_seeding">
+                        <a href="/torrents.php?type=seeding&amp;username=DioneSilvio">Up</a>:
+                        <span class="stat bjtooltip">4.544 TiB</span>
+                    </li>
+                    <li id="stats_leeching">
+                        <a href="/torrents.php?type=leeching&amp;username=DioneSilvio">Down</a>:
+                        <span class="stat bjtooltip">425.78 GiB</span>
+                        <span class="stat bjtooltip">(153)</span>
+                    </li>
+                    <li id="stats_ratio">
+                        Ratio: <span class="stat"><span class="bjtooltip r50">10,92</span></span>
+                    </li>
+                    <li id="stats_bjpontos">
+                        <a href="/loja.php">BJ-Pontos</a>: <span class="stat bjtooltip">367.167</span>
+                    </li>
+                </ul>
+                <ul id="userinfo_minor">
+                    <li id="nav_staffinbox">
+                        <a href="/staffpm.php">Staff PM</a>
+                    </li>
+                    <li id="nav_requests">
+                        <a href="/requests.php">Pedidos</a>
+                    </li>
+                    <li id="nav_donations">
+                                                <a href="/doacoes.php" style="--progress:88.268">Doações (88.268%)</a>
+                                        </li>
+                </ul>
+            </div>
+            <div id="menu">
+                <div id="centertopmenu">
+                    <div id="menudrop">
+                        <ul>
+                            <li id="nav_index">
+                                <a href="/index.php">Home &nbsp;▾</a>
+                                <ul>
+                                    <li><a href="/rules.php">Regras</a></li>
+                                    <li><a href="/wiki.php">Ajuda</a></li>
+                                    <li><a href="/grupos.php">Grupos</a><a class="symbol">▸</a>
+                                    <ul>
+                                        <li><a href="/grupos.php">Lista</a>
+                                        </li><li><a href="/grupos.php?action=ranking">Top 10</a>
+                                    </li></ul>
+                                    </li>
+                                    <li><a href="/staffpm.php">Staff PM</a></li>
+                                    <li><a href="/doacoes.php">Doações</a></li>
+                                    <li><a href="#">Diversão</a><a class="symbol">▸</a>
+                                    <ul>
+                                        <li><a href="/diversao.php?action=minas">Minas</a>
+                                        </li><li><a href="/diversao.php?action=cassino">Cassino</a>
+                                        </li><li><a href="/bolao.php">Bolão</a>
+                                        </li><li><a href="/diversao.php?action=batepapo">Bate-Papo</a>
+                                    </li></ul>
+                                    </li><li><a href="/loja.php">Loja</a></li>
+                                </ul>
+                            </li>
+                            <li id="nav_torrents">
+                                <a href="/torrents.php">Torrents &nbsp;▾</a>                            <ul>
+                                    <li><a href="#">Categorias</a><a class="symbol">▸</a>
+                                        <ul>
+                                            <li><a href="/torrents.php?filter_cat%5b14%5d=14">Animes</a></li>
+                                            <li><a href="/torrents.php?filter_cat%5b3%5d=3">Aplicativos</a><a class="symbol">▸</a>
+                                                <ul>
+                                                    <li><a href="/torrents.php?filter_cat%5b3%5d=3&amp;plataforma=54">Android</a></li>
+                                                    <li><a href="/torrents.php?filter_cat%5b3%5d=3&amp;plataforma=55">iOS</a></li>
+                                                    <li><a href="/torrents.php?filter_cat%5b3%5d=3&amp;plataforma=51">Linux</a></li>
+                                                    <li><a href="/torrents.php?filter_cat%5b3%5d=3&amp;plataforma=53">Mac</a></li>
+                                                    <li><a href="/torrents.php?filter_cat%5b3%5d=3&amp;plataforma=57">Multiplataforma</a></li>
+                                                    <li><a href="/torrents.php?filter_cat%5b3%5d=3&amp;plataforma=52">Windows</a></li>
+                                                    <li><a href="/torrents.php?filter_cat%5b3%5d=3&amp;plataforma=56">Windows Phone</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="/torrents.php?filter_cat%5b11%5d=11">Audiobook</a></li>
+                                            <li><a href="/torrents.php?filter_cat%5B19%5D=1&amp;filter_cat%5B20%5D=1&amp;filter_cat%5B21%5D=1&amp;filter_cat%5B23%5D=1&amp;filter_cat%5B22%5D=1&amp;filter_cat%5B15%5D=1&amp;action=basic&amp;searchsubmit=1#">Conteúdo Adulto</a><a class="symbol">▸</a>
+                                                <ul>
+                                                   <li><a href="/torrents.php?filter_cat%5B19%5D=1&amp;action=basic&amp;searchsubmit=1">Filmes Adultos</a></li>
+                                                   <li><a href="/torrents.php?filter_cat%5B15%5D=1&amp;action=basic&amp;searchsubmit=1">Fotos Adultas</a></li>
+                                                   <li><a href="/torrents.php?filter_cat%5B20%5D=1&amp;action=basic&amp;searchsubmit=1">Jogos Adultos</a></li>
+                                                   <li><a href="/torrents.php?filter_cat%5B22%5D=1&amp;action=basic&amp;searchsubmit=1">Animes Adultos</a></li>
+                                                   <li><a href="/torrents.php?filter_cat%5B21%5D=1&amp;action=basic&amp;searchsubmit=1">Mangás Adultos</a></li>
+                                                   <li><a href="/torrents.php?filter_cat%5B23%5D=1&amp;action=basic&amp;searchsubmit=1">HQs Adultas</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="/torrents.php?filter_cat%5b18%5d=18">Cursos</a></li>
+                                            <li><a href="/torrents.php?filter_cat%5b16%5d=16">Desenhos Animados</a></li>
+                                            <li><a href="/torrents.php?filter_cat%5b10%5d=10">E-Books</a></li>
+                                            <li><a href="/torrents.php?filter_cat%5b8%5d=8">Esportes</a></li>
+                                            <li><a href="/torrents.php?filter_cat%5b1%5d=1">Filmes</a><a class="symbol">▸</a>
+                                                <ul>
+                                                    <li><a href="/torrents.php?taglist=acao&amp;filter_cat%5b1%5d=1">Ação</a></li>
+                                                    <li><a href="/torrents.php?taglist=animacao&amp;filter_cat%5b1%5d=1">Animação</a></li>
+                                                    <li><a href="/torrents.php?taglist=aventura&amp;filter_cat%5b1%5d=1">Aventura</a></li>
+                                                    <li><a href="/torrents.php?taglist=biografia&amp;filter_cat%5b1%5d=1">Biografia</a></li>
+                                                    <li><a href="/torrents.php?taglist=comedia&amp;filter_cat%5b1%5d=1">Comédia</a></li>
+                                                    <li><a href="/torrents.php?taglist=romance,comedia&amp;filter_cat%5b1%5d=1">Comédia Romântica</a></li>
+                                                    <li><a href="/torrents.php?taglist=curta&amp;filter_cat%5b1%5d=1">Curtas</a></li>
+                                                    <li><a href="/torrents.php?taglist=documentario&amp;filter_cat%5b1%5d=1&amp;filter_cat%5b18%5d=18">Documentário</a></li>
+                                                    <li><a href="/torrents.php?taglist=drama&amp;filter_cat%5b1%5d=1">Drama</a></li>
+                                                    <li><a href="/torrents.php?taglist=esporte&amp;filter_cat%5b1%5d=1">Esporte</a></li>
+                                                    <li><a href="/torrents.php?taglist=familia&amp;filter_cat%5b1%5d=1">Família</a></li>
+                                                    <li><a href="/torrents.php?taglist=fantasia&amp;filter_cat%5b1%5d=1">Fantasia</a></li>
+                                                    <li><a href="/torrents.php?taglist=faroeste&amp;filter_cat%5b1%5d=1">Faroeste</a></li>
+                                                    <li><a href="/torrents.php?taglist=ficcao_cientifica&amp;filter_cat%5b1%5d=1">Ficção Científica</a></li>
+                                                    <li><a href="/torrents.php?taglist=film_noir&amp;filter_cat%5b1%5d=1">Film Noir</a></li>
+                                                    <li><a href="/torrents.php?taglist=guerra&amp;filter_cat%5b1%5d=1">Guerra</a></li>
+                                                    <li><a href="/torrents.php?taglist=historia&amp;filter_cat%5b1%5d=1">História</a></li>
+                                                    <li><a href="/torrents.php?taglist=misterio&amp;filter_cat%5b1%5d=1">Mistério</a></li>
+                                                    <li><a href="/torrents.php?taglist=musica&amp;filter_cat%5b1%5d=1">Música</a></li>
+                                                    <li><a href="/torrents.php?taglist=musical&amp;filter_cat%5b1%5d=1">Musical</a></li>
+                                                    <li><a href="/torrents.php?taglist=policial&amp;filter_cat%5b1%5d=1">Policial</a></li>
+                                                    <li><a href="/torrents.php?taglist=romance&amp;filter_cat%5b1%5d=1">Romance</a></li>
+                                                    <li><a href="/torrents.php?taglist=suspense&amp;filter_cat%5b1%5d=1">Suspense</a></li>
+                                                    <li><a href="/torrents.php?taglist=terror&amp;filter_cat%5b1%5d=1">Terror</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="/torrents.php?filter_cat%5b12%5d=12">HQs</a></li>
+                                            <li><a href="/torrents.php?filter_cat%5b4%5d=4">Jogos</a><a class="symbol">▸</a>
+                                                <ul>
+                                                    <li><a href="/torrents.php?filter_cat%5b4%5d=4&amp;plataforma=13">3DS</a></li>
+                                                    <li><a href="/torrents.php?filter_cat%5b4%5d=4&amp;plataforma=2">Celular/Tablet</a></li>
+                                                    <li><a href="/torrents.php?filter_cat%5b4%5d=4&amp;plataforma=12">DS</a></li>
+                                                    <li><a href="/torrents.php?filter_cat%5b4%5d=4&amp;plataforma=1">Emuladores e ROMs</a></li>
+                                                    <li><a href="/torrents.php?filter_cat%5b4%5d=4&amp;plataforma=3">PC</a></li>
+                                                    <li><a href="/torrents.php?filter_cat%5b4%5d=4&amp;plataforma=15">PS Vita</a></li>
+                                                    <li><a href="/torrents.php?filter_cat%5b4%5d=4&amp;plataforma=4">PS1</a></li>
+                                                    <li><a href="/torrents.php?filter_cat%5b4%5d=4&amp;plataforma=5">PS2</a></li>
+                                                    <li><a href="/torrents.php?filter_cat%5b4%5d=4&amp;plataforma=6">PS3</a></li>
+                                                    <li><a href="/torrents.php?filter_cat%5b4%5d=4&amp;plataforma=7">PS4</a></li>
+                                                    <li><a href="/torrents.php?filter_cat%5b4%5d=4&amp;plataforma=18">PS5</a></li>
+                                                    <li><a href="/torrents.php?filter_cat%5b4%5d=4&amp;plataforma=14">PSP</a></li>
+                                                    <li><a href="/torrents.php?filter_cat%5b4%5d=4&amp;plataforma=16">Switch</a></li>
+                                                    <li><a href="/torrents.php?filter_cat%5b4%5d=4&amp;plataforma=8">Wii</a></li>
+                                                    <li><a href="/torrents.php?filter_cat%5b4%5d=4&amp;plataforma=9">Wii U</a></li>
+                                                    <li><a href="/torrents.php?filter_cat%5b4%5d=4&amp;plataforma=17">Xbox</a></li>
+                                                    <li><a href="/torrents.php?filter_cat%5b4%5d=4&amp;plataforma=10">Xbox 360</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="/torrents.php?filter_cat%5b5%5d=5">Mangás</a></li>
+                                            <li><a href="/torrents.php?filter_cat%5b7%5d=7">Outros</a></li>
+                                            <li><a href="/torrents.php?filter_cat%5b9%5d=9">Revistas</a></li>
+                                            <li><a href="/torrents.php?filter_cat%5b2%5d=2">Seriados</a><a class="symbol">▸</a>
+                                                <ul>
+                                                    <li><a href="/torrents.php?taglist=acao&amp;filter_cat%5b2%5d=2">Ação</a></li>
+                                                    <li><a href="/torrents.php?taglist=animacao&amp;filter_cat%5b2%5d=2">Animação</a></li>
+                                                    <li><a href="/torrents.php?taglist=aventura&amp;filter_cat%5b2%5d=2">Aventura</a></li>
+                                                    <li><a href="/torrents.php?taglist=biografia&amp;filter_cat%5b2%5d=2">Biografia</a></li>
+                                                    <li><a href="/torrents.php?taglist=comedia&amp;filter_cat%5b2%5d=2">Comédia</a></li>
+                                                    <li><a href="/torrents.php?taglist=romance,comedia&amp;filter_cat%5b2%5d=2">Comédia Romântica</a></li>
+                                                    <li><a href="/torrents.php?taglist=curta&amp;filter_cat%5b2%5d=2">Curtas</a></li>
+                                                    <li><a href="/torrents.php?taglist=documentario&amp;filter_cat%5b2%5d=2&amp;filter_cat%5b18%5d=18">Documentário</a></li>
+                                                    <li><a href="/torrents.php?taglist=drama&amp;filter_cat%5b2%5d=2">Drama</a></li>
+                                                    <li><a href="/torrents.php?taglist=esporte&amp;filter_cat%5b2%5d=2">Esporte</a></li>
+                                                    <li><a href="/torrents.php?taglist=familia&amp;filter_cat%5b2%5d=2">Família</a></li>
+                                                    <li><a href="/torrents.php?taglist=fantasia&amp;filter_cat%5b2%5d=2">Fantasia</a></li>
+                                                    <li><a href="/torrents.php?taglist=faroeste&amp;filter_cat%5b2%5d=2">Faroeste</a></li>
+                                                    <li><a href="/torrents.php?taglist=ficcao_cientifica&amp;filter_cat%5b2%5d=2">Ficção Científica</a></li>
+                                                    <li><a href="/torrents.php?taglist=guerra&amp;filter_cat%5b2%5d=2">Guerra</a></li>
+                                                    <li><a href="/torrents.php?taglist=historia&amp;filter_cat%5b2%5d=2">História</a></li>
+                                                    <li><a href="/torrents.php?taglist=misterio&amp;filter_cat%5b2%5d=2">Mistério</a></li>
+                                                    <li><a href="/torrents.php?taglist=musica&amp;filter_cat%5b2%5d=2">Música</a></li>
+                                                    <li><a href="/torrents.php?taglist=musical&amp;filter_cat%5b2%5d=2">Musical</a></li>
+                                                    <li><a href="/torrents.php?taglist=policial&amp;filter_cat%5b2%5d=2">Policial</a></li>
+                                                    <li><a href="/torrents.php?taglist=romance&amp;filter_cat%5b2%5d=2">Romance</a></li>
+                                                    <li><a href="/torrents.php?taglist=suspense&amp;filter_cat%5b2%5d=2">Suspense</a></li>
+                                                    <li><a href="/torrents.php?taglist=terror&amp;filter_cat%5b2%5d=2">Terror</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="/torrents.php?filter_cat%5b13%5d=13">Stand Up Comedy</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="/torrents.php?action=destaques">Destaques</a></li>
+                                    <li><a href="/collages.php">Coleções</a></li>
+                                    <li><a href="/requests.php">Pedidos</a></li>
+                                    <li><a href="/torrents.php?action=today">Últimas 24h</a></li>
+                                    <li><a href="/rss.php">RSS</a></li>
+                                    <li><a href="/upload.php">Upload</a></li>
+                                    <li><a href="/torrents.php?action=pendentes">Pendentes</a></li>
+                                    <li><a href="/torrents.php?action=morrendo">Morrendo</a></li>
+                                    <li><a href="/torrents.php?action=reciclagem">Reciclagem</a></li>
+                                </ul>
+                            </li>
+                            <li id="nav_forums"><a href="/forums.php">Fórum</a></li>
+                            <li id="nav_top10"><a href="/top10.php">Top 10</a></li>                        <li id="nav_userinfor">
+                                <a href="/user.php?username=DioneSilvio">DioneSilvio &nbsp;▾</a>
+                                <ul>
+                                    <li><a href="/friends.php">Amigos</a></li>
+                                                                    <li><a href="/user.php?action=invite">Convites</a></li>
+                                    <li><a href="/inbox.php?sort=unread">Mensagens</a><a class="symbol">▸</a>
+                                        <ul>
+                                            <li><a href="/inbox.php">Recebidas</a></li>
+                                            <li><a href="/inbox.php?action=sentbox">Enviadas</a></li>
+                                         </ul>
+                                    </li>
+                                    <li><a href="/bookmarks.php?type=torrents">Favoritos</a></li>
+                                    <li><a href="/comments.php">Comentários</a></li>
+                                    <li><a href="#">Torrents</a><a class="symbol">▸</a>
+                                        <ul>
+                                            <li><a href="/torrents.php?type=uploaded&amp;username=DioneSilvio">Lançados</a></li>
+                                            <li><a href="/torrents.php?type=seeding&amp;username=DioneSilvio">Semeando</a></li>
+                                            <li><a href="/torrents.php?type=leeching&amp;username=DioneSilvio">Baixando</a></li>
+                                            <li><a href="/torrents.php?type=snatched&amp;username=DioneSilvio">Finalizados</a></li>
+                                            <li><a href="/user.php?action=torrenthistory&amp;username=DioneSilvio">Histórico</a></li>
+                                         </ul>
+                                    </li><li><a href="/user.php?action=edit&amp;username=DioneSilvio">Configurações</a></li>
+                                    <li><a href="/userhistory.php?action=subscriptions">Seguidos</a></li>
+                                    <li><a href="/logout.php?auth=68c0fb0573dda343558c229eb03e6a59">Sair</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+                <div id="alerts">
+                    <div class="alertbar"><span style="color: red;"><strong>Siga-nos no nosso <a style="color: #0A92C8" target="_blank" href="https://href.li/?https://t.me/joinchat/AAAAAFNykFILShniPNfiMg">Canal Oficial do Telegram</a></strong></span><br>
+    Postagem de Lançamentos mais aguardados e informações importantes sobre o site.</div>
+                </div>
+            <div id="searchbars">
+                <ul>
+                    <li id="searchbar_torrents">
+                        <span class="hidden">Torrents: </span>
+                        <form class="search_form" name="torrents" action="torrents.php" method="get">
+                            <input id="torrentssearch" accesskey="t" spellcheck="false" onfocus="if (this.value == 'Torrents') { this.value = ''; }" onblur="if (this.value == '') { this.value = 'Torrents'; }" value="Torrents" placeholder="Torrents" type="text" name="searchstr" size="17">
+                        </form>
+                    </li>
+                    <li id="searchbar_requests">
+                        <span class="hidden">Requests: </span>
+                        <form class="search_form" name="requests" action="requests.php" method="get">
+                            <input id="requestssearch" spellcheck="false" onfocus="if (this.value == 'Pedidos') { this.value = ''; }" onblur="if (this.value == '') { this.value = 'Pedidos'; }" value="Pedidos" placeholder="Pedidos" type="text" name="search" size="17">
+                        </form>
+                    </li>
+                    <li id="searchbar_forums">
+                        <span class="hidden">Forums: </span>
+                        <form class="search_form" name="forums" action="forums.php" method="get">
+                            <input value="search" type="hidden" name="action">
+                            <input id="forumssearch" onfocus="if (this.value == 'Fórum') { this.value = ''; }" onblur="if (this.value == '') { this.value = 'Fórum'; }" value="Fórum" placeholder="Fórum" type="text" name="search" size="17">
+                        </form>
+                    </li>
+                    <li id="searchbar_log">
+                        <span class="hidden">Log: </span>
+                        <form class="search_form" name="log" action="log.php" method="get">
+                            <input id="logsearch" onfocus="if (this.value == 'Logs') { this.value = ''; }" onblur="if (this.value == '') { this.value = 'Logs'; }" value="Logs" placeholder="Logs" type="text" name="search" size="17">
+                        </form>
+                    </li>
+                    <li id="searchbar_users">
+                        <span class="hidden">Users: </span>
+                        <form class="search_form" name="users" action="user.php" method="get">
+                            <input id="userssearch" onfocus="if (this.value == 'Usuários') { this.value = ''; }" onblur="if (this.value == '') { this.value = 'Usuários'; }" value="Usuários" placeholder="Usuários" type="text" name="searchuser" size="20">
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="content">
+    <div class="thin">
+        <div class="sidebar">
+        <div class="box">
+            <div class="head colhead_dark">
+                <strong><a href="/torrents.php?action=destaques">Destaques</a></strong>
+            </div>
+            <div class="center">
+    
+    <script src="/static/functions/bjqs-1.3.min.js?v=1599349412"></script>
+    
+    <div id="container">
+        <div id="banner-fade" style="height: 350px; max-width: 250px; position: relative;">
+            <ul class="bjqs" style="height: 350px; width: 100%; display: block;">
+                        <li class="bjqs-slide" style="height: 350px; width: 100%; display: none;">
+                            <a href="/torrents.php?id=381314" target="_blank">
+                                <img src="https://i.bj-share.info/4493232f1b84c8457218f40ce270734d.jpg" title="Marry My Husband" height="350" width="400">
+                            </a>
+                        </li>
+                        <li class="bjqs-slide" style="height: 350px; width: 100%; display: none;">
+                            <a href="/torrents.php?id=290165" target="_blank">
+                                <img src="https://i.bj-share.info/28c20c68302f67d04091e94e503ce851.jpg" title="Naked and Afraid: Brazil" height="350" width="400">
+                            </a>
+                        </li>
+                        <li class="bjqs-slide" style="height: 350px; width: 100%; display: none;">
+                            <a href="/torrents.php?id=257265" target="_blank">
+                                <img src="https://i.bj-share.info/ac33dd71c2b48410f397b2ca94522db2.jpg" title="Star Wars: The Bad Batch" height="350" width="400">
+                            </a>
+                        </li>
+                        <li class="bjqs-slide" style="height: 350px; width: 100%; display: none;">
+                            <a href="/torrents.php?id=386032" target="_blank">
+                                <img src="https://i.bj-share.info/d32587e603a8344ad4996ce143e829d5.jpg" title="The Witch of Fern Island" height="350" width="400">
+                            </a>
+                        </li>
+                        <li class="bjqs-slide" style="height: 350px; width: 100%; display: none;">
+                            <a href="/torrents.php?id=387557" target="_blank">
+                                <img src="https://i.bj-share.info/4a7bd33d7639306107a322c9ada4a04d.jpg" title="X-Men '97" height="350" width="400">
+                            </a>
+                        </li>
+                        <li class="bjqs-slide" style="height: 350px; width: 100%; display: none;">
+                            <a href="/torrents.php?id=387569" target="_blank">
+                                <img src="https://i.bj-share.info/1542471d4835fa157329ee3842153ead.jpg" title="Alone in the Dark" height="350" width="400">
+                            </a>
+                        </li>
+                        <li class="bjqs-slide" style="height: 350px; width: 100%; display: list-item;">
+                            <a href="/torrents.php?id=386942" target="_blank">
+                                <img src="https://i.bj-share.info/7356a6537f7e3e1dde4163c62af389dd.png" title="CorelDRAW Graphics Suite" height="350" width="400">
+                            </a>
+                        </li>
+                        <li class="bjqs-slide" style="height: 350px; width: 100%; display: none;">
+                            <a href="/torrents.php?id=387754" target="_blank">
+                                <img src="https://i.bj-share.info/cc4981bf83dfcb103f78448292440ccf.jpg" title="OnlyFans - Lolly @Lolly_lips [Pack]" height="350" width="400">
+                            </a>
+                        </li>
+                        <li class="bjqs-slide" style="height: 350px; width: 100%; display: none;">
+                            <a href="/torrents.php?id=317261" target="_blank">
+                                <img src="https://i.bj-share.info/056fbcdfe264c194e5943de0dc197159.jpg" title="Naked and Afraid Latin America" height="350" width="400">
+                            </a>
+                        </li>
+                        <li class="bjqs-slide" style="height: 350px; width: 100%; display: none;">
+                            <a href="/torrents.php?id=387014" target="_blank">
+                                <img src="https://i.bj-share.info/ba24f15722fe2e3c13bf5aae4520e9a1.jpg" title="Contra: Operation Galuga" height="350" width="400">
+                            </a>
+                        </li>
+            </ul>
+        <ul class="bjqs-controls v-centered"><li class="bjqs-prev"><a href="#" data-direction="previous" style="top: 46%;">&lt;&lt; Anterior</a></li><li class="bjqs-next"><a href="#" data-direction="forward" style="top: 46%;">Próximo &gt;&gt;</a></li></ul></div>
+        <script>
+            jQuery(document).ready(function($) {
+                $('#banner-fade').bjqs({
+                    height      : 350,
+                    width       : 250,
+                    responsive  : true,
+                    usecaptions : false,
+                    nexttext : 'Próximo >>',
+                    prevtext : '<< Anterior',
+                    showmarkers : false,
+    
+                    animtype : 'fade', // accepts 'fade' or 'slide'
+                    animduration : 900, // how fast the animation are
+                    animspeed : 8000, // the delay between each slide
+                    automatic : true // automatic
+                });
+    
+            });
+        </script>
+    </div>
+                <div>&nbsp;</div>
+            </div>
+        </div>
+                <div class="box">
+                    <div class="head colhead_dark">
+                        <strong><a href="forums.php?action=viewforum&amp;forumid=43">Anúncios Oficiais</a></strong>
+                    </div>
+                    <ul class="stats nobullet"><li>➱ <a href="forums.php?action=viewthread&amp;threadid=1501" class="BJinfoBox">[Anúncio] Criação/Alteração de Regras <span>Data/Hora: 09/03/2024 às 01:40</span></a></li><li>➱ <a href="forums.php?action=viewthread&amp;threadid=8907" class="BJinfoBox">[Tutorial] Realizando doação via Bitcoin<span>Data/Hora: 13/09/2023 às 22:41</span></a></li><li>➱ <a href="forums.php?action=viewthread&amp;threadid=9070" class="BJinfoBox">[Anúncio] Sistema de pedidos<span>Data/Hora: 01/04/2023 às 14:39</span></a></li><li>➱ <a href="forums.php?action=viewthread&amp;threadid=11594" class="BJinfoBox">[Anúncio] Nova Loja do BJ-Share<span>Data/Hora: 22/03/2024 às 23:21</span></a></li><li>➱ <a href="forums.php?action=viewthread&amp;threadid=8990" class="BJinfoBox">[Anúncio] Staff PM<span>Data/Hora: 14/02/2024 às 07:33</span></a></li><li>➱ <a href="forums.php?action=viewthread&amp;threadid=11897" class="BJinfoBox">[Anúncio] Chat Oficial do BJ-Share<span>Data/Hora: 23/03/2024 às 12:50</span></a></li></ul>
+                </div>
+            <div class="box">
+                <div class="head colhead_dark"><strong><a href="/forums.php?action=search&amp;search=">Últimas do Fórum</a></strong></div>
+                    <ul class="stats nobullet"><li>➱ <a href="forums.php?action=viewthread&amp;threadid=15704" class="BJinfoBox">Olá, mundo!<span>Fórum: Apresentações</span></a></li><li>➱ <a href="forums.php?action=viewthread&amp;threadid=15634" class="BJinfoBox">[Dúvida] Cliente Torrent para Android<span>Fórum: Outros Clientes</span></a></li><li>➱ <a href="forums.php?action=viewthread&amp;threadid=15701" class="BJinfoBox">[Dúvida] Senha unifique<span>Fórum: Segurança / Redes</span></a></li><li>➱ <a href="forums.php?action=viewthread&amp;threadid=1587" class="BJinfoBox">[Divulgacão] Jogos Gratuitos<span>Fórum: Promoções</span></a></li><li>➱ <a href="forums.php?action=viewthread&amp;threadid=15703" class="BJinfoBox">como desamassar revistas<span>Fórum: Off-Topic</span></a></li><li>➱ <a href="forums.php?action=viewthread&amp;threadid=166" class="BJinfoBox">[Oficial] Quem é a Atriz/Ator, Filme Adulto<span>Fórum: Conteúdo Adulto</span></a></li><li>➱ <a href="forums.php?action=viewthread&amp;threadid=15698" class="BJinfoBox">[Dúvida] Desinstalação de Jogos<span>Fórum: Jogos</span></a></li><li>➱ <a href="forums.php?action=viewthread&amp;threadid=15693" class="BJinfoBox">[Dúvida] FIlme Remux no Kodi<span>Fórum: Vídeos</span></a></li><li>➱ <a href="forums.php?action=viewthread&amp;threadid=15702" class="BJinfoBox">[Pedido] Avatar e Assinatura<span>Fórum: Pedidos de Kits</span></a></li><li>➱ <a href="forums.php?action=viewthread&amp;threadid=15700" class="BJinfoBox">[Ajuda] Boot do windows e NVME M.2 novo não reconhece<span>Fórum: Windows</span></a></li></ul>        </div>
+            
+                </div>
+    
+        <div class="main_column">
+             <div id="news67" class="box news_post">
+                    <div class="head">
+                        <strong>Bolão 2023!</strong> <span class="time tooltip" title="Feb 03 2024, 18:00">53 dias, 19 horas, 43 minutos e 18 segundos atrás</span>                                        <span style="float: right;"><a href="#" onclick="$('#newsbody67').gtoggle(); this.innerHTML = (this.innerHTML == 'Mostrar' ? 'Ocultar' : 'Mostrar'); return false;" class="brackets">Ocultar</a></span>
+                        </div>
+    
+                            <div id="newsbody67" class="pad newsbody">Olá galera.<br>
+    <br>
+    Temos os vencedores do nosso Bolão.<br>
+    <br>
+    As premiações serão as seguintes:<br>
+    <br>
+    1º colocado (em Acertos e em Ganhos): <br>
+    &nbsp;&nbsp; <br>
+    <span style="color: red;">-&gt;</span> Um troféu exclusivo ao lado do nick.<br>
+    <br>
+    <span style="color: red;">-&gt;</span> Doação de 180 dias BJ GOLD(*).<br>
+    <br>
+    <span style="color: red;">-&gt;</span> BJ pontos em dobro (30 dias).<br>
+    <br>
+    <span style="color: red;">-&gt;</span> Up em dobro (30 dias).<br>
+    <br>
+    <span style="color: red;">-&gt;</span> Torrents Free (30 dias).<br>
+    <br>
+    2º colocados (em Acertos e em Ganhos): <br>
+    <br>
+    <span style="color: red;">-&gt;</span> 1 Doação de 90 dias BJ MASTER(*).<br>
+    <br>
+    <span style="color: red;">-&gt;</span> BJ pontos em dobro (20 dias).<br>
+    <br>
+    <span style="color: red;">-&gt;</span> UP em dobro (20 dias).<br>
+    <br>
+    <span style="color: red;">-&gt;</span> Torrents free (20 dias). <br>
+    <br>
+    3º Colocados (em Acertos e em Ganhos):<br>
+    <br>
+    <span style="color: red;">-&gt;</span> 1 doação de 90 dias BJ MASTER(*).<br>
+    <br>
+    <span style="color: red;">-&gt;</span> BJ Pontos em dobro (10 dias).<br>
+    <br>
+    <span style="color: red;">-&gt;</span> UP em dobro (10 dias).<br>
+    <br>
+    <span style="color: red;">-&gt;</span> Torrents Free (10 dias).<br>
+    <br>
+    Todas as premiações serão ativadas imediatamente.<br>
+    <br>
+    Atenciosamente, <br>
+    Equipe BJ-Share! <img class="scale_image" onclick="lightbox.init(this, $(this).width());" alt="https://bj-share.info/static/common/smilies/bjlover.gif" src="/static/common/smilies/bjlover.gif"></div>
+                </div>
+    
+            <div id="more_news" class="box">
+                <div class="head">
+                    <em><span><a href="#" onclick="news_ajax(event, 3, 1, 0, false); return false;">Clique para carregar mais notícias.</a></span> </em>
+                </div>
+            </div>
+    
+            <script>
+                $(function () {
+                    if ($('.newsbody').length) $('.newsbody').gtoggle();
+                    catLancamentos(501,0);
+                });
+            </script>
+            <div class="box">
+                <div class="head"><strong>Lançamentos</strong></div>
+                <div class="center">
+                    <br>
+                    <button type="button" id="501" onclick="catLancamentos(501,0)" disabled="">
+                        Geral
+                    </button>
+                                    &nbsp;&nbsp;&nbsp;
+                    <button type="button" id="503" onclick="catLancamentos(503,0)">
+                        XXX
+                    </button>
+                                    &nbsp;&nbsp;&nbsp;
+                    <button type="button" id="504" onclick="catLancamentos(504,0)">
+                        E-Books
+                    </button>
+                    &nbsp;&nbsp;&nbsp;
+                    <button type="button" id="505" onclick="catLancamentos(505,0)">
+                        Cursos
+                    </button>
+                </div>
+                <br>
+                <div class="post_return"><table class="torrent_table cats numbering border"><tbody><tr class="colhead"><th><center>Cat.</center></th><th>Nome</th><th><center>Baixar</center></th><th class="center"><i class="fas fa-arrow-up"></i></th>
+    <th class="center"><i class="fas fa-arrow-down"></i></th>
+    
+    </tr><tr class="torrent row">
+                      <td height="40" width="40"><a href="/torrents.php?filter_cat%5b4%5d=4&amp;plataforma=3"><img width="50" height="50" src="static/common/newcaticons3/pcb.svg" alt="PC" title="PC" class="brackets tooltip"></a></td>
+                      <td>
+                          <a class="BJinfoBox" href="/torrents.php?id=388134&amp;torrentid=633518#torrent633518"><font style="font-weight:normal">Horizon: Forbidden West - Complete Edition</font><span>
+    Subcategoria: Update<br>Idioma: Multilinguagem<br>Ano: 2024<br>Plataforma: PC<br>Release: Update<br>Tamanho: 594.71 MiB<br>Gêneros: acao, rpg<br>    <hr>
+        Lançado em: 28/03/2024 às 13:42<br>Lançado por:williamshrp</span></a><br><font style="font-weight:normal"> [<font style="color:#B8860B">SerialSeeders</font>]</font>
+                      </td>
+                      <td>
+                          <center><a href="torrents.php?action=download&amp;id=633518&amp;source=lancamentos" data-tooltip="Baixar"><i class="fad fa-download"></i></a></center>
+                      </td>
+                      <td>
+                          <center><font style="font-weight:normal">0</font></center>
+                      </td>
+                      <td>
+                          <center><font style="font-weight:normal">0</font></center>
+                      </td>
+                  </tr>
+    
+    <tr class="torrent row">
+                      <td height="40" width="40"><a href="/torrents.php?filter_cat%5b4%5d=4&amp;plataforma=3"><img width="50" height="50" src="static/common/newcaticons3/pcb.svg" alt="PC" title="PC" class="brackets tooltip"></a></td>
+                      <td>
+                          <a class="BJinfoBox" href="/torrents.php?id=388130&amp;torrentid=633514#torrent633514"><font style="font-weight:normal">Open Roads</font><span>
+    Idioma: Multilinguagem<br>Ano: 2024<br>Plataforma: PC<br>Release: SKIDROW<br>Tamanho: 5.00 GiB<br>Gêneros: aventura, indie<br>    <hr>
+        Lançado em: 28/03/2024 às 13:19<br>Lançado por:williamshrp</span></a><br><font style="font-weight:normal"> [<font color="green">Free</font>] [<font style="color:#B8860B">SerialSeeders</font>]</font>
+                      </td>
+                      <td>
+                          <center><a href="torrents.php?action=download&amp;id=633514&amp;source=lancamentos" data-tooltip="Baixar"><i class="fad fa-download"></i></a></center>
+                      </td>
+                      <td>
+                          <center><font style="font-weight:normal">15</font></center>
+                      </td>
+                      <td>
+                          <center><font style="font-weight:normal">1</font></center>
+                      </td>
+                  </tr>
+    
+    <tr class="torrent row">
+                      <td height="40" width="40"><a href="/torrents.php?filter_cat%5b14%5d=14"><img width="50" height="50" src="static/common/newcaticons3/animeb.svg" alt="Animes" title="Animes" class="brackets tooltip"></a></td>
+                      <td>
+                          <a class="BJinfoBox" href="/torrents.php?id=382321&amp;torrentid=633513#torrent633513"><font style="font-weight:normal">Delusional Monthly Magazine [Gekkan Mousou Kagaku] - S01</font><span>
+    Áudio: Legendado<br>Idioma: Japonês<br>Formato: MKV<br>Qualidade: WEB-DL<br>Resolução: 1280x720<br>Ano: 2024<br>Tamanho: 8.18 GiB<br>Gêneros: fantasia, comedia, anime<br>    <hr>
+        Lançado em: 28/03/2024 às 13:18<br>Lançado por:Olympus</span></a><br><font style="font-weight:normal"> [<font color="red">HD</font>] [<font color="green">Free</font>] [<font style="color:#B8860B">Porn Kings</font>]</font>
+                      </td>
+                      <td>
+                          <center><a href="torrents.php?action=download&amp;id=633513&amp;source=lancamentos" data-tooltip="Baixar"><i class="fad fa-download"></i></a></center>
+                      </td>
+                      <td>
+                          <center><font style="font-weight:normal">1</font></center>
+                      </td>
+                      <td>
+                          <center><font style="font-weight:normal">4</font></center>
+                      </td>
+                  </tr>
+    
+    <tr class="torrent row">
+                      <td height="40" width="40"><a href="/torrents.php?filter_cat%5b2%5d=2"><img width="50" height="50" src="static/common/newcaticons3/seriadob2.svg" alt="Seriados" title="Seriados" class="brackets tooltip"></a></td>
+                      <td>
+                          <a class="BJinfoBox" href="/torrents.php?id=299773&amp;torrentid=633512#torrent633512"><font style="font-weight:normal">A Faxineira [The Cleaning Lady] - S03E02</font><span>
+    Áudio: Dual Áudio<br>Idioma: Inglês<br>Formato: MKV<br>Qualidade: WEB-DL<br>Resolução: 1280x720<br>Ano: 2021<br>Tamanho: 457.68 MiB<br>Gêneros: policial, drama, suspense<br>    <hr>
+        Lançado em: 28/03/2024 às 13:13<br>Lançado por:AnjinhoDJ</span></a><br><font style="font-weight:normal"> [<font color="red">HD</font>] [<font color="green">Free</font>]</font>
+                      </td>
+                      <td>
+                          <center><a href="torrents.php?action=download&amp;id=633512&amp;source=lancamentos" data-tooltip="Baixar"><i class="fad fa-download"></i></a></center>
+                      </td>
+                      <td>
+                          <center><font style="font-weight:normal">18</font></center>
+                      </td>
+                      <td>
+                          <center><font style="font-weight:normal">0</font></center>
+                      </td>
+                  </tr>
+    
+    <tr class="torrent row">
+                      <td height="40" width="40"><a href="/torrents.php?filter_cat%5b2%5d=2"><img width="50" height="50" src="static/common/newcaticons3/seriadob2.svg" alt="Seriados" title="Seriados" class="brackets tooltip"></a></td>
+                      <td>
+                          <a class="BJinfoBox" href="/torrents.php?id=299773&amp;torrentid=633511#torrent633511"><font style="font-weight:normal">A Faxineira [The Cleaning Lady] - S03E02</font><span>
+    Áudio: Dual Áudio<br>Idioma: Inglês<br>Formato: MKV<br>Qualidade: WEB-DL<br>Resolução: 1920x1080<br>Ano: 2021<br>Tamanho: 894.25 MiB<br>Gêneros: policial, drama, suspense<br>    <hr>
+        Lançado em: 28/03/2024 às 13:13<br>Lançado por:AnjinhoDJ</span></a><br><font style="font-weight:normal"> [<font color="red">Full HD</font>] [<font color="green">Free</font>]</font>
+                      </td>
+                      <td>
+                          <center><a href="torrents.php?action=download&amp;id=633511&amp;source=lancamentos" data-tooltip="Baixar"><i class="fad fa-download"></i></a></center>
+                      </td>
+                      <td>
+                          <center><font style="font-weight:normal">19</font></center>
+                      </td>
+                      <td>
+                          <center><font style="font-weight:normal">1</font></center>
+                      </td>
+                  </tr>
+    
+    <tr class="torrent row">
+                      <td height="40" width="40"><a href="/torrents.php?filter_cat%5b14%5d=14"><img width="50" height="50" src="static/common/newcaticons3/animeb.svg" alt="Animes" title="Animes" class="brackets tooltip"></a></td>
+                      <td>
+                          <a class="BJinfoBox" href="/torrents.php?id=382321&amp;torrentid=633510#torrent633510"><font style="font-weight:normal">Delusional Monthly Magazine [Gekkan Mousou Kagaku] - S01</font><span>
+    Áudio: Legendado<br>Idioma: Japonês<br>Formato: MKV<br>Qualidade: WEB-DL<br>Resolução: 1920x1080<br>Ano: 2024<br>Tamanho: 16.09 GiB<br>Gêneros: fantasia, comedia, anime<br>    <hr>
+        Lançado em: 28/03/2024 às 13:09<br>Lançado por:Olympus</span></a><br><font style="font-weight:normal"> [<font color="red">Full HD</font>] [<font color="green">Free</font>] [<font style="color:#B8860B">Porn Kings</font>]</font>
+                      </td>
+                      <td>
+                          <center><a href="torrents.php?action=download&amp;id=633510&amp;source=lancamentos" data-tooltip="Baixar"><i class="fad fa-download"></i></a></center>
+                      </td>
+                      <td>
+                          <center><font style="font-weight:normal">1</font></center>
+                      </td>
+                      <td>
+                          <center><font style="font-weight:normal">4</font></center>
+                      </td>
+                  </tr>
+    
+    <tr class="torrent row">
+                      <td height="40" width="40"><a href="/torrents.php?filter_cat%5b2%5d=2"><img width="50" height="50" src="static/common/newcaticons3/seriadob2.svg" alt="Seriados" title="Seriados" class="brackets tooltip"></a></td>
+                      <td>
+                          <a class="BJinfoBox" href="/torrents.php?id=388126&amp;torrentid=633502#torrent633502"><font style="font-weight:normal">Mother, May I Murder? - S01</font><span>
+    Áudio: Dual Áudio<br>Idioma: Inglês<br>Formato: MKV<br>Qualidade: WEB-DL<br>Resolução: 1920x1080<br>Ano: 2023<br>Tamanho: 7.20 GiB<br>Gêneros: policial<br>    <hr>
+        Lançado em: 28/03/2024 às 12:45<br>Lançado por:kenfabio</span></a><br><font style="font-weight:normal"> [<font color="red">Full HD</font>] [<font color="green">Free</font>] [<font style="color:#B8860B">SiGLA</font>]</font>
+                      </td>
+                      <td>
+                          <center><a href="torrents.php?action=download&amp;id=633502&amp;source=lancamentos" data-tooltip="Baixar"><i class="fad fa-download"></i></a></center>
+                      </td>
+                      <td>
+                          <center><font style="font-weight:normal">21</font></center>
+                      </td>
+                      <td>
+                          <center><font style="font-weight:normal">2</font></center>
+                      </td>
+                  </tr>
+    
+    <tr class="torrent row">
+                      <td height="40" width="40"><a href="/torrents.php?filter_cat%5b2%5d=2"><img width="50" height="50" src="static/common/newcaticons3/seriadob2.svg" alt="Seriados" title="Seriados" class="brackets tooltip"></a></td>
+                      <td>
+                          <a class="BJinfoBox" href="/torrents.php?id=387260&amp;torrentid=633496#torrent633496"><font style="font-weight:normal">Whindersson Verso - S01E06</font><span>
+    Áudio: Nacional<br>Idioma: Português<br>Formato: MKV<br>Qualidade: WEB-DL<br>Resolução: 1920x1080<br>Ano: 2024<br>Tamanho: 95.12 MiB<br>Gêneros: aventura, comedia, animacao, familia<br>    <hr>
+        Lançado em: 28/03/2024 às 12:30<br>Lançado por:Olympus</span></a><br><font style="font-weight:normal"> [<font color="red">Full HD</font>] [<font color="green">Free</font>] [<font style="color:#B8860B">Porn Kings</font>]</font>
+                      </td>
+                      <td>
+                          <center><a href="torrents.php?action=download&amp;id=633496&amp;source=lancamentos" data-tooltip="Baixar"><i class="fad fa-download"></i></a></center>
+                      </td>
+                      <td>
+                          <center><font style="font-weight:normal">24</font></center>
+                      </td>
+                      <td>
+                          <center><font style="font-weight:normal">0</font></center>
+                      </td>
+                  </tr>
+    
+    <tr class="torrent row">
+                      <td height="40" width="40"><a href="/torrents.php?filter_cat%5b2%5d=2"><img width="50" height="50" src="static/common/newcaticons3/seriadob2.svg" alt="Seriados" title="Seriados" class="brackets tooltip"></a></td>
+                      <td>
+                          <a class="BJinfoBox" href="/torrents.php?id=387260&amp;torrentid=633495#torrent633495"><font style="font-weight:normal">Whindersson Verso - S01E05</font><span>
+    Áudio: Nacional<br>Idioma: Português<br>Formato: MKV<br>Qualidade: WEB-DL<br>Resolução: 1920x1080<br>Ano: 2024<br>Tamanho: 85.86 MiB<br>Gêneros: aventura, comedia, animacao, familia<br>    <hr>
+        Lançado em: 28/03/2024 às 12:29<br>Lançado por:Olympus</span></a><br><font style="font-weight:normal"> [<font color="red">Full HD</font>] [<font color="green">Free</font>] [<font style="color:#B8860B">Porn Kings</font>]</font>
+                      </td>
+                      <td>
+                          <center><a href="torrents.php?action=download&amp;id=633495&amp;source=lancamentos" data-tooltip="Baixar"><i class="fad fa-download"></i></a></center>
+                      </td>
+                      <td>
+                          <center><font style="font-weight:normal">22</font></center>
+                      </td>
+                      <td>
+                          <center><font style="font-weight:normal">0</font></center>
+                      </td>
+                  </tr>
+    
+    <tr class="torrent row">
+                      <td height="40" width="40"><a href="/torrents.php?filter_cat%5b2%5d=2"><img width="50" height="50" src="static/common/newcaticons3/seriadob2.svg" alt="Seriados" title="Seriados" class="brackets tooltip"></a></td>
+                      <td>
+                          <a class="BJinfoBox" href="/torrents.php?id=387841&amp;torrentid=633494#torrent633494"><font style="font-weight:normal">Crime Scene Confidential - S02E04</font><span>
+    Áudio: Dual Áudio<br>Idioma: Inglês<br>Formato: MKV<br>Qualidade: WEB-DL<br>Resolução: 1920x1080<br>Ano: 2022<br>Tamanho: 886.13 MiB<br>Gêneros: reality.tv<br>    <hr>
+        Lançado em: 28/03/2024 às 12:29<br>Lançado por:kenfabio</span></a><br><font style="font-weight:normal"> [<font color="red">Full HD</font>] [<font color="green">Free</font>] [<font style="color:#B8860B">SiGLA</font>]</font>
+                      </td>
+                      <td>
+                          <center><a href="torrents.php?action=download&amp;id=633494&amp;source=lancamentos" data-tooltip="Baixar"><i class="fad fa-download"></i></a></center>
+                      </td>
+                      <td>
+                          <center><font style="font-weight:normal">22</font></center>
+                      </td>
+                      <td>
+                          <center><font style="font-weight:normal">0</font></center>
+                      </td>
+                  </tr>
+    </tbody></table>
+    
+    <center>Exibir:<br><button type="button" onclick="catLancamentos(501, 10)" disabled="disabled">
+                        10
+                    </button>&nbsp;&nbsp;&nbsp;<button type="button" onclick="catLancamentos(501, 20)">
+                        20
+                    </button>&nbsp;&nbsp;&nbsp;<button type="button" onclick="catLancamentos(501, 30)">
+                        30
+                    </button></center><br>
+    </div>
+            </div>
+            <script>
+                function catLancamentos(categoria, total) {
+                    var dataString = 'cat=' + categoria;
+                    $('#501').prop("disabled", false);
+                    $('#502').prop("disabled", false);
+                    $('#503').prop("disabled", false);
+                    $('#504').prop("disabled", false);
+                    $('#505').prop("disabled", false);
+                    $('#'+categoria).disable(true);
+                    tz = new Date().getTimezoneOffset();
+                    $.ajax({
+                        type: "POST",
+                        url: "lancamentos.php?sec=1&total="+total+"&tz="+tz+"&sw="+window.screen.width+"&sh="+window.screen.height+"&pr="+window.devicePixelRatio,
+                        data: dataString,
+                        cache: false,
+                        success: function (result) {
+                            $(".post_return").html(result);
+                        }
+                    });
+                    return false;
+                }
+                ;
+            </script>
+            <div class="box">
+                <div class="head"><strong>Shoutbox</strong></div>
+                    <script src="static/functions/shoutbox.js?v=1708199820"></script>
+        <div id="chatoutput">
+            <div class="outback" id="chat_list"><table class="shoutTable" width="100%" height="365" cellspacing="0" cellpadding="0"><tbody><tr class="row2"><td class="shoutTable"><small>[28/03 13:38:15]</small> [<a href="#" onclick="chat.append('Seraph4: '); return false;">R</a>] <strong><a style="color: #A020F0;" href="user.php?username=Seraph4">Seraph4</a><a target="_blank" href="doacoes.php"><img class="donor_icon bjtooltip" src="static/common/symbols/doador1.png" alt="Doador Premium" title="Doador Premium"></a></strong>:  <img border="0" src="static/common/smileys/hmm2.gif"></td></tr><tr class="row1"><td class="shoutTable"><small>[28/03 13:12:35]</small> [<a href="#" onclick="chat.append('Arauttho: '); return false;">R</a>] <strong><a style="color: #575757;" href="user.php?username=Arauttho">Arauttho</a></strong>:  dorabiatto: Que legal, já que é assim, poderia me dizer pra que servem os grupos mesmo? </td></tr><tr class="row2"><td class="shoutTable"><small>[28/03 13:03:48]</small>  <a href="/staffpm.php"><b style="color:red">System</b></a>: O BJ-Share possui um Chat Oficial para membros ativos do site, entre agora mesmo e crie amizades em nossa valiosa comunidade. Apresente-se ao <a href="https://bj-share.info/diversao.php?action=batepapo" target="_blank">Porteiro</a> ou siga o caminho Home &gt; Diversão &gt; Bate-Papo e faça parte do nosso chat.</td></tr><tr class="row1"><td class="shoutTable"><small>[28/03 12:03:36]</small> [<a href="#" onclick="chat.append('dorabiatto: '); return false;">R</a>] <strong><a style="color: #3c78d8;" href="user.php?username=dorabiatto">dorabiatto</a><a target="_blank" href="doacoes.php"><img class="donor_icon bjtooltip" src="static/common/symbols/doador3.png" alt="Doador Gold" title="Doador Gold"></a></strong>: <img border="0" src="static/common/smilies/fish.gif"></td></tr><tr class="row2"><td class="shoutTable"><small>[28/03 12:03:25]</small>  <a href="/staffpm.php"><b style="color:red">System</b></a>: Seus torrents não estão baixando? Visite nossa <a href="https://bj-share.info/wiki.php#_978021518" target="_blank">Ajuda</a> e confira a lista de clientes torrent recomendados para uso.</td></tr><tr class="row1"><td class="shoutTable"><small>[28/03 11:55:16]</small> [<a href="#" onclick="chat.append('jameson: '); return false;">R</a>] <strong><a style="color: #3c78d8;" href="user.php?username=jameson">jameson</a></strong>:  jneto: Provavelmente vc ficou muito tempo fora do site. leia as noticias no top do site que encontrará a resposta</td></tr><tr class="row2"><td class="shoutTable"><small>[28/03 11:46:26]</small> [<a href="#" onclick="chat.append('dorabiatto: '); return false;">R</a>] <strong><a style="color: #3c78d8;" href="user.php?username=dorabiatto">dorabiatto</a><a target="_blank" href="doacoes.php"><img class="donor_icon bjtooltip" src="static/common/symbols/doador3.png" alt="Doador Gold" title="Doador Gold"></a></strong>:  Arauttho: sempre, de pe e a ordem</td></tr><tr class="row1"><td class="shoutTable"><small>[28/03 11:46:04]</small> [<a href="#" onclick="chat.append('dorabiatto: '); return false;">R</a>] <strong><a style="color: #3c78d8;" href="user.php?username=dorabiatto">dorabiatto</a><a target="_blank" href="doacoes.php"><img class="donor_icon bjtooltip" src="static/common/symbols/doador3.png" alt="Doador Gold" title="Doador Gold"></a></strong>:  jneto: O acesso às categorias de Aplicativos/Jogos (todas plataformas) será permitido somente aos usuários que ativarem a opção "Exibir arquivos possivelmente inseguros" na página de Configurações. Tal configuração pode ser ativada pelo usuário a qualquer momento e faz tais categorias aparecerem imediatamente.</td></tr><tr class="row2"><td class="shoutTable"><small>[28/03 11:31:56]</small> [<a href="#" onclick="chat.append('jneto: '); return false;">R</a>] <strong><a style="color: #575757;" href="user.php?username=jneto">jneto</a></strong>: Bom dia. Como está a questão de jogos aqui no BJ? Eles foram removidos ou estão em algum lugar específico do site?</td></tr><tr class="row1"><td class="shoutTable"><small>[28/03 11:23:28]</small> [<a href="#" onclick="chat.append('Arauttho: '); return false;">R</a>] <strong><a style="color: #575757;" href="user.php?username=Arauttho">Arauttho</a></strong>: Dorabiatto vc por aqui? rs</td></tr><tr class="row2"><td class="shoutTable"><small>[28/03 11:23:01]</small> [<a href="#" onclick="chat.append('Arauttho: '); return false;">R</a>] <strong><a style="color: #575757;" href="user.php?username=Arauttho">Arauttho</a></strong>: Para que servem os grupos mesmo?</td></tr><tr class="row1"><td class="shoutTable"><small>[28/03 11:21:41]</small> [<a href="#" onclick="chat.append('dorabiatto: '); return false;">R</a>] <strong><a style="color: #3c78d8;" href="user.php?username=dorabiatto">dorabiatto</a><a target="_blank" href="doacoes.php"><img class="donor_icon bjtooltip" src="static/common/symbols/doador3.png" alt="Doador Gold" title="Doador Gold"></a></strong>: dia</td></tr><tr class="row2"><td class="shoutTable"><small>[28/03 11:20:21]</small> [<a href="#" onclick="chat.append('Arauttho: '); return false;">R</a>] <strong><a style="color: #575757;" href="user.php?username=Arauttho">Arauttho</a></strong>: Bom dia!</td></tr><tr class="row1"><td class="shoutTable"><small>[28/03 11:13:30]</small> [<a href="#" onclick="chat.append('Seraph4: '); return false;">R</a>] <strong><a style="color: #A020F0;" href="user.php?username=Seraph4">Seraph4</a><a target="_blank" href="doacoes.php"><img class="donor_icon bjtooltip" src="static/common/symbols/doador1.png" alt="Doador Premium" title="Doador Premium"></a></strong>:  <img border="0" src="static/common/smilies/fish.gif"></td></tr><tr class="row2"><td class="shoutTable"><small>[28/03 11:03:54]</small> [<a href="#" onclick="chat.append('DGDP: '); return false;">R</a>] <strong><a style="color: #948B8B" href="user.php?username=DGDP">DGDP</a></strong>:  <img border="0" src="static/common/smilies/fish.gif"></td></tr><tr class="row1"><td class="shoutTable"><small>[28/03 11:03:44]</small>  <a href="/staffpm.php"><b style="color:red">System</b></a>: Os Grupos de Lançamento voltaram! Entre agora mesmo no link -&gt; <a href="https://bj-share.info/grupos.php" target="_blank">Grupos</a>, e faça parte desta novidade no BJ-Share. Descubra novas amizades e ganhe conhecimento para realizar grandes lançamentos, só falta você!</td></tr><tr class="row2"><td class="shoutTable"><small>[28/03 10:48:14]</small> [<a href="#" onclick="chat.append('Ufoo: '); return false;">R</a>] <strong><a style="color: #A020F0;" href="user.php?username=Ufoo">Ufoo</a></strong>:  <img border="0" src="static/common/smilies/fish.gif"></td></tr><tr class="row1"><td class="shoutTable"><small>[28/03 10:32:20]</small> [<a href="#" onclick="chat.append('jameson: '); return false;">R</a>] <strong><a style="color: #3c78d8;" href="user.php?username=jameson">jameson</a></strong>:  <img border="0" src="static/common/smilies/fish.gif"> <img border="0" src="static/common/smilies/coffee1.gif"></td></tr><tr class="row2"><td class="shoutTable"><small>[28/03 10:18:17]</small> [<a href="#" onclick="chat.append('Carmichael: '); return false;">R</a>] <strong><a style="color: #A020F0;" href="user.php?username=Carmichael">Carmichael</a></strong>:  <img border="0" src="static/common/smilies/fish.gif"></td></tr><tr class="row1"><td class="shoutTable"><small>[28/03 10:03:26]</small>  <a href="/staffpm.php"><b style="color:red">System</b></a>: <img border="0" src="static/common/smilies/fish.gif"></td></tr><tr class="row2"><td class="shoutTable"><small>[28/03 09:49:11]</small> [<a href="#" onclick="chat.append('dorabiatto: '); return false;">R</a>] <strong><a style="color: #3c78d8;" href="user.php?username=dorabiatto">dorabiatto</a><a target="_blank" href="doacoes.php"><img class="donor_icon bjtooltip" src="static/common/symbols/doador3.png" alt="Doador Gold" title="Doador Gold"></a></strong>: <img border="0" src="static/common/smilies/fish.gif"></td></tr><tr class="row1"><td class="shoutTable"><small>[28/03 09:48:17]</small> [<a href="#" onclick="chat.append('Seraph4: '); return false;">R</a>] <strong><a style="color: #A020F0;" href="user.php?username=Seraph4">Seraph4</a><a target="_blank" href="doacoes.php"><img class="donor_icon bjtooltip" src="static/common/symbols/doador1.png" alt="Doador Premium" title="Doador Premium"></a></strong>:  <img border="0" src="static/common/smilies/coffee1.gif"></td></tr><tr class="row2"><td class="shoutTable"><small>[28/03 09:30:54]</small> [<a href="#" onclick="chat.append('williamshrp: '); return false;">R</a>] <strong><a style="color: #948B8B" href="user.php?username=williamshrp">williamshrp</a></strong>:  <img border="0" src="static/common/smilies/coffee1.gif"></td></tr><tr class="row1"><td class="shoutTable"><small>[28/03 09:25:46]</small> [<a href="#" onclick="chat.append('AngeloSantos: '); return false;">R</a>] <strong><a style="color: #575757;" href="user.php?username=AngeloSantos">AngeloSantos</a><a target="_blank" href="doacoes.php"><img class="donor_icon bjtooltip" src="static/common/symbols/doador2.png" alt="Doador Master" title="Doador Master"></a></strong>:  <img border="0" src="static/common/smilies/fish.gif"></td></tr><tr class="row2"><td class="shoutTable"><small>[28/03 09:03:29]</small>  <a href="/staffpm.php"><b style="color:red">System</b></a>: Fique por dentro das novidades e atualizações do <font color="red"><b>BJ-Share</b></font> lendo todas e quaisquer notícias postadas na <a href="https://bj-share.info/index.php" target="_blank">Página Inicial</a> do site.</td></tr><tr class="row1"><td class="shoutTable"><small>[28/03 08:33:00]</small> [<a href="#" onclick="chat.append('Ufoo: '); return false;">R</a>] <strong><a style="color: #A020F0;" href="user.php?username=Ufoo">Ufoo</a></strong>:  <img border="0" src="static/common/smilies/coffee1.gif"></td></tr><tr class="row2"><td class="shoutTable"><small>[28/03 08:27:58]</small> [<a href="#" onclick="chat.append('dorabiatto: '); return false;">R</a>] <strong><a style="color: #3c78d8;" href="user.php?username=dorabiatto">dorabiatto</a><a target="_blank" href="doacoes.php"><img class="donor_icon bjtooltip" src="static/common/symbols/doador3.png" alt="Doador Gold" title="Doador Gold"></a></strong>: <img border="0" src="static/common/smilies/coffee1.gif"></td></tr><tr class="row1"><td class="shoutTable"><small>[28/03 08:03:24]</small>  <a href="/staffpm.php"><b style="color:red">System</b></a>: Precisa se ausentar e tem receio de perder sua conta por inatividade? Acesse o menu Configurações e utilize a ferramenta Estacionar Conta e fique tranquilo.</td></tr><tr class="row2"><td class="shoutTable"><small>[28/03 07:53:49]</small> [<a href="#" onclick="chat.append('kbessa: '); return false;">R</a>] <strong><a style="color: #575757;" href="user.php?username=kbessa">kbessa</a></strong>: coelhinho da páscoa que trazes pra mim? um convite do BJ pro meu amigo assim : 5 milhões de pontos, &nbsp;<img border="0" src="static/common/smilies/angel.gif"> <img border="0" src="static/common/smilies/angel.gif"> <img border="0" src="static/common/smilies/angel.gif"></td></tr><tr class="row1"><td class="shoutTable"><small>[28/03 07:03:05]</small>  <a href="/staffpm.php"><b style="color:red">System</b></a>: <img border="0" src="static/common/smilies/fish.gif"></td></tr><tr class="row2"><td class="shoutTable"><small>[28/03 03:59:54]</small> [<a href="#" onclick="chat.append('Reyza: '); return false;">R</a>] <strong><a style="color: #948B8B" href="user.php?username=Reyza">Reyza</a></strong>: Bom dia</td></tr><tr class="row1"><td class="shoutTable"><small>[28/03 03:13:52]</small> [<a href="#" onclick="chat.append('gansocom: '); return false;">R</a>] <strong><a style="color: #575757;" href="user.php?username=gansocom">gansocom</a></strong>:  <img border="0" src="static/common/smilies/mario.gif"></td></tr><tr class="row2"><td class="shoutTable"><small>[28/03 03:03:03]</small>  <a href="/staffpm.php"><b style="color:red">System</b></a>: Precisa se ausentar e tem receio de perder sua conta por inatividade? Acesse o menu Configurações e utilize a ferramenta Estacionar Conta e fique tranquilo.</td></tr><tr class="row1"><td class="shoutTable"><small>[28/03 01:08:18]</small> [<a href="#" onclick="chat.append('Ufoo: '); return false;">R</a>] <strong><a style="color: #A020F0;" href="user.php?username=Ufoo">Ufoo</a></strong>:  <img border="0" src="static/common/smilies/fish.gif"></td></tr><tr class="row2"><td class="shoutTable"><small>[28/03 01:03:24]</small>  <a href="/staffpm.php"><b style="color:red">System</b></a>: <img border="0" src="static/common/smilies/fish.gif"></td></tr><tr class="row1"><td class="shoutTable"><small>[28/03 00:16:20]</small> [<a href="#" onclick="chat.append('MAD: '); return false;">R</a>] <strong><a style="color: #A020F0;" href="user.php?username=MAD">MAD</a></strong>:  samanuzuke: Leia a ajuda do BJ, lá tem uma lista aonde eles permitem ou proibem certos programas. O seu está na lista de bloqueados por nao estar funcionando.</td></tr><tr class="row2"><td class="shoutTable"><small>[28/03 00:09:44]</small> [<a href="#" onclick="chat.append('tony2013: '); return false;">R</a>] <strong><a style="color: #948B8B" href="user.php?username=tony2013">tony2013</a></strong>: Rihanna - Umbrella🎵</td></tr><tr class="row1"><td class="shoutTable"><small>[28/03 00:08:49]</small>  <a href="/staffpm.php"><b style="color:red">System</b></a>: Usuários desativados por inatividade podem retornar ao site mediante doação e somente desta maneira. Fique por dentro das regras do BJ-Share pelo tópico <a href="https://bj-share.info/forums.php?action=viewthread&amp;threadid=1501" target="_blank">Criação/alteração de regras.</a></td></tr><tr class="row2"><td class="shoutTable"><small>[28/03 00:08:20]</small> [<a href="#" onclick="chat.append('tony2013: '); return false;">R</a>] <strong><a style="color: #948B8B" href="user.php?username=tony2013">tony2013</a></strong>:  regras </td></tr><tr class="row1"><td class="shoutTable"><small>[28/03 00:07:58]</small> [<a href="#" onclick="chat.append('tony2013: '); return false;">R</a>] <strong><a style="color: #948B8B" href="user.php?username=tony2013">tony2013</a></strong>:  samanuzuke: &nbsp;entao ... </td></tr><tr class="row2"><td class="shoutTable"><small>[28/03 00:01:42]</small> [<a href="#" onclick="chat.append('samanuzuke: '); return false;">R</a>] <strong><a style="color: #575757;" href="user.php?username=samanuzuke">samanuzuke</a></strong>: Eu tentei baixar de outro site para testar e funcionou normal. Então não é nada com problema do aplicativo ou celular </td></tr><tr class="row1"><td class="shoutTable"><small>[28/03 00:01:01]</small> [<a href="#" onclick="chat.append('samanuzuke: '); return false;">R</a>] <strong><a style="color: #575757;" href="user.php?username=samanuzuke">samanuzuke</a></strong>: Pessoal não consigo baixar torrent pelo celular. Ele baixa mas não faz o download no utorrent. Se eu faço o mesmo procedimento pelo PC funciona perfeitamente </td></tr><tr class="row2"><td class="shoutTable"><small>[27/03 23:03:49]</small>  <a href="/staffpm.php"><b style="color:red">System</b></a>: Fique por dentro das novidades e atualizações do <font color="red"><b>BJ-Share</b></font> lendo todas e quaisquer notícias postadas na <a href="https://bj-share.info/index.php" target="_blank">Página Inicial</a> do site.</td></tr><tr class="row1"><td class="shoutTable"><small>[27/03 22:59:34]</small> [<a href="#" onclick="chat.append('zefuinha: '); return false;">R</a>] <strong><a style="color: #575757;" href="user.php?username=zefuinha">zefuinha</a></strong>:  PiA: era isso mesmo, mto obrigado pela ajuda</td></tr><tr class="row2"><td class="shoutTable"><small>[27/03 22:52:45]</small> [<a href="#" onclick="chat.append('PiA: '); return false;">R</a>] <strong><a style="color: #A020F0;" href="user.php?username=PiA">PiA</a><a target="_blank" href="doacoes.php"><img class="donor_icon bjtooltip" src="static/common/symbols/doador12.png" alt="Doador Platinum" title="Doador Platinum"></a></strong>:  zefuinha: Veja se o seu cliente não esta na lista de bloqueados na sessão de ajuda do site</td></tr><tr class="row1"><td class="shoutTable"><small>[27/03 22:39:18]</small> [<a href="#" onclick="chat.append('zefuinha: '); return false;">R</a>] <strong><a style="color: #575757;" href="user.php?username=zefuinha">zefuinha</a></strong>: alguem sabe se o site está com problemas, os torrents mostram com seed, porém na hora de baixar mostra 0 seeds e não baixa nada</td></tr><tr class="row2"><td class="shoutTable"><small>[27/03 22:03:54]</small>  <a href="/staffpm.php"><b style="color:red">System</b></a>: Previsões? Faça uma pesquisa pela palavra chave "Previsão" em nosso fórum e fique por dentro dos últimos e futuros lançamentos.</td></tr><tr class="row1"><td class="shoutTable"><small>[27/03 20:33:05]</small> [<a href="#" onclick="chat.append('dorabiatto: '); return false;">R</a>] <strong><a style="color: #3c78d8;" href="user.php?username=dorabiatto">dorabiatto</a><a target="_blank" href="doacoes.php"><img class="donor_icon bjtooltip" src="static/common/symbols/doador3.png" alt="Doador Gold" title="Doador Gold"></a></strong>: Valeuuuu</td></tr><tr class="row2"><td class="shoutTable"><small>[27/03 20:32:50]</small> [<a href="#" onclick="chat.append('dorabiatto: '); return false;">R</a>] <strong><a style="color: #3c78d8;" href="user.php?username=dorabiatto">dorabiatto</a><a target="_blank" href="doacoes.php"><img class="donor_icon bjtooltip" src="static/common/symbols/doador3.png" alt="Doador Gold" title="Doador Gold"></a></strong>:  Rodrigo193: enviei errado, o certo é esse &nbsp;<img border="0" src="static/common/smilies/love.gif"></td></tr><tr class="row1"><td class="shoutTable"><small>[27/03 20:32:35]</small> [<a href="#" onclick="chat.append('dorabiatto: '); return false;">R</a>] <strong><a style="color: #3c78d8;" href="user.php?username=dorabiatto">dorabiatto</a><a target="_blank" href="doacoes.php"><img class="donor_icon bjtooltip" src="static/common/symbols/doador3.png" alt="Doador Gold" title="Doador Gold"></a></strong>:  Rodrigo193: &nbsp;<img border="0" src="static/common/smilies/no.gif"></td></tr></tbody></table></div>
+        </div>
+        <br>
+        <input id="idNumSeconds" name="cont" type="hidden" value="60">
+        <div id="divUpdateCounter"><center><label id="lblContador">Atualização em: 120s. <a href="javascript:chat.getShouts();" target="">Atualizar</a> </label></center></div>
+        <form id="chatForm" name="chatForm" onsubmit="return false;" style="text-align: center;">
+            <input type="text" style="width:80%;" name="chatbarText" id="txtChat" onblur="chat.checkStatus('');" onfocus="chat.checkStatus('active');" autocomplete="off">
+            <input onclick="chat.sendShout();" type="submit" id="btnShout" name="submit" value="Enviar" disabled="">
+            <br><input onclick="chat.append('[b] [/b]');" type="submit" id="btnBold" name="submit" value="B">
+            <input onclick="chat.append('[u] [/u]');" type="submit" id="btnUnderline" name="submit" value="U">
+            <input onclick="chat.append('[i] [/i]');" type="submit" id="btnItalic" name="submit" value="I">
+            <input onclick="chat.append('[url=] [/url]');" type="submit" id="btnUrl" name="submit" value="URL">
+        </form>
+        <div id="chat_smilies"></div>
+        <div id="chat_history" class="linkbox"><a href="javascript:chat.getSmilies();"><strong>[Emoticons]</strong></a> <a href="shouthistory.php" target="_blank"><strong>[Histórico]</strong></a>
+        </div>
+        <div id="chat_alert" class="chat_alert_inactive"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="footer">
+        <br><br>
+        <div id="disclaimer_container" class="thin" style="text-align: center; margin-bottom: 20px;">
+            Nenhum dos arquivos mostrados aqui estão hospedados no servidor. Os links são fornecidos apenas pelos usuários locais. O administrador deste site não pode ser responsabilizado pelo que seus usuários postam, ou quaisquer outras ações de seus usuários. Você não pode usar este site para distribuir ou baixar qualquer material se você não tem os direitos legais para fazê-lo. É sua própria responsabilidade aderir a estes termos.
+        </div>
+        <p>BJ-Share © 2024</p>
+        <p>
+            <strong>Tempo de carregamento:</strong> <span>0.0074 segundos</span>
+            <strong>Uso:</strong> <span>4.00 MiB</span>
+            <strong>Carga:</strong> <span>0.80 0.85 0.96</span>
+            <strong>Data:</strong> <span id="site_date">28/Mar/2024</span> - <span id="site_time">13:43</span>
+    
+        </p>
+        </div>
+    
+    </div>
     <div class="banner">
         <img class="Logo" src="imagens/polymec.png" alt="Banner">
     </div>
